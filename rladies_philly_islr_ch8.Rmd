@@ -298,6 +298,8 @@ rf_spec <-
 And fit the model.
 
 ```{r}
+set.seed(1234)
+
 rf_fit <- fit(rf_spec, medv ~ ., data = Boston_train)
 ```
 
